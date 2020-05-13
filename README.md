@@ -6,3 +6,5 @@ Train and test using two dataset (WISDM and UCI)
 
 The model is used as a deep feature extractor to extract deep feature (trainable weights) to be input into WEKA.
 Different classifiers are tested and tabulated.
+
+This application has not been fully tested yet, please run at your own discretion
