@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     b
+Instances:    7352
+Attributes:   513
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 16.14 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        2686               91.1435 %
+Incorrectly Classified Instances       261                8.8565 %
+Kappa statistic                          0.8936
+Mean absolute error                      0.0297
+Root mean squared error                  0.1717
+Relative absolute error                 10.7211 %
+Root relative squared error             46.1018 %
+Total Number of Instances             2947     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.942    0.006    0.971      0.942    0.956      0.947    0.968     0.924     WALKING
+                 0.936    0.002    0.987      0.936    0.961      0.954    0.967     0.934     WALKING_UPSTAIRS
+                 0.998    0.018    0.903      0.998    0.948      0.940    0.990     0.901     WALKING_DOWNSTAIRS
+                 0.798    0.031    0.836      0.798    0.817      0.781    0.884     0.701     SITTING
+                 0.855    0.048    0.798      0.855    0.826      0.786    0.904     0.709     STANDING
+                 0.953    0.002    0.992      0.953    0.972      0.967    0.976     0.955     LAYING
+Weighted Avg.    0.911    0.018    0.914      0.911    0.912      0.894    0.947     0.852     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 467   0  29   0   0   0 |   a = WALKING
+  14 441  16   0   0   0 |   b = WALKING_UPSTAIRS
+   0   1 419   0   0   0 |   c = WALKING_DOWNSTAIRS
+   0   5   0 392  90   4 |   d = SITTING
+   0   0   0  77 455   0 |   e = STANDING
+   0   0   0   0  25 512 |   f = LAYING
+

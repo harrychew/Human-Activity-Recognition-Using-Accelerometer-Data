@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.ManhattanDistance -R first-last\""
+Relation:     d
+Instances:    20868
+Attributes:   481
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 378.56 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        5700               86.5735 %
+Incorrectly Classified Instances       884               13.4265 %
+Kappa statistic                          0.8207
+Mean absolute error                      0.0448
+Root mean squared error                  0.2115
+Relative absolute error                 18.3003 %
+Root relative squared error             59.905  %
+Total Number of Instances             6584     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.632    0.045    0.605      0.632    0.619      0.576    0.794     0.419     Downstairs
+                 0.954    0.010    0.977      0.954    0.965      0.951    0.972     0.946     Jogging
+                 0.912    0.008    0.898      0.912    0.905      0.897    0.952     0.824     Sitting
+                 0.862    0.000    0.997      0.862    0.925      0.923    0.931     0.867     Standing
+                 0.788    0.043    0.693      0.788    0.737      0.704    0.872     0.569     Upstairs
+                 0.871    0.064    0.885      0.871    0.878      0.809    0.903     0.818     Walking
+Weighted Avg.    0.866    0.036    0.871      0.866    0.868      0.830    0.915     0.793     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+  411   12    0    0  108  119 |    a = Downstairs
+   28 1899    0    0   13   50 |    b = Jogging
+    0    0  412    0    3   37 |    c = Sitting
+    1    0   47  319    2    1 |    d = Standing
+   75   15    0    1  571   63 |    e = Upstairs
+  164   18    0    0  127 2088 |    f = Walking
+

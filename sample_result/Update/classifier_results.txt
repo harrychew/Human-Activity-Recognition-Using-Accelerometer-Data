@@ -1,0 +1,22 @@
+UCI
+Logistic Regression 100% 90.5667 %
+SVM 97.6333 % 91.9919 %
+Random Forest 100% 92.2633 %
+Naive Bayes 96.5452 % 90.1595 %
+kNN (Ibk) - distance Scaled Manhattan 100% 91.4489 %
+kNN (Ibk) - distance Euclidean 100% 91.1435 %
+Bayesian Network 97.2524 % 91.6865 %
+J48 99.728  %   88.7004 %
+Multilayer Perceptron  98.7622 % 91.6186 %
+
+
+WISDM
+Logistic Regression  100% 89.2922 %
+SVM 99.5735 % 88.5176 %
+Random Forest 100% 87.6063 %
+Naive Bayes 95.5051 % 85.4192 %
+kNN (Ibk) - distance Scaled Manhattan 100% 86.5735 %
+kNN (Ibk) - distance Euclidean 100% 86.1938 %
+Bayesian Network 96.2095 % 85.8445 %
+J48 99.6837 % 85.1914 %
+Multilayer Perceptron 99.77% 88.5632 %

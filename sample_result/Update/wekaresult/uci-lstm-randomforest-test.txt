@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     b
+Instances:    7352
+Attributes:   513
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 4.91 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.44 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        2719               92.2633 %
+Incorrectly Classified Instances       228                7.7367 %
+Kappa statistic                          0.9071
+Mean absolute error                      0.0343
+Root mean squared error                  0.1476
+Relative absolute error                 12.3844 %
+Root relative squared error             39.6231 %
+Total Number of Instances             2947     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.942    0.002    0.987      0.942    0.964      0.957    0.985     0.972     WALKING
+                 0.953    0.002    0.987      0.953    0.970      0.964    0.999     0.996     WALKING_UPSTAIRS
+                 0.998    0.018    0.903      0.998    0.948      0.940    0.997     0.966     WALKING_DOWNSTAIRS
+                 0.833    0.030    0.847      0.833    0.840      0.808    0.956     0.853     SITTING
+                 0.861    0.039    0.830      0.861    0.845      0.810    0.961     0.865     STANDING
+                 0.963    0.001    0.994      0.963    0.978      0.974    0.999     0.997     LAYING
+Weighted Avg.    0.923    0.016    0.925      0.923    0.923      0.908    0.982     0.940     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 467   0  29   0   0   0 |   a = WALKING
+   6 449  16   0   0   0 |   b = WALKING_UPSTAIRS
+   0   1 419   0   0   0 |   c = WALKING_DOWNSTAIRS
+   0   5   0 409  74   3 |   d = SITTING
+   0   0   0  74 458   0 |   e = STANDING
+   0   0   0   0  20 517 |   f = LAYING
+
